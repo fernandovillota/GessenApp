@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Saludable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Comida Saludable</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="mostrarContenido('inicio')">Inicio</a>
+        <a href="#" onclick="mostrarContenido('recetas')">Recetas</a>
+        <a href="#" onclick="mostrarContenido('articulos')">Artículos</a>
+        <a href="#" onclick="mostrarContenido('contacto')">Contacto</a>
+    </nav>
+
+    <div class="contenido" id="inicio">
+        <img src="fpx5KDp2RhOVqqDIYBAD-w.png" width="300" height="300" class="logo">
+        <section>
+            <h2>Bienvenido a nuestra página sobre comida saludable</h2>
+            <p>En esta página encontrarás información útil y recetas deliciosas para mantener una dieta equilibrada y saludable.</p>
+            <p>¡Comienza tu viaje hacia una vida más saludable hoy mismo!</p>
+        </section>
+    </div>
+
+    <div class="contenido" id="recetas" style="display: none;">
+        <h2>Recetas Saludables</h2>
+        <p>Aquí puedes encontrar una variedad de recetas saludables para desayuno, almuerzo, cena y meriendas.</p>
+        <ul>
+            <li>Ensalada de quinoa</li>
+            <li>Sopa de vegetales</li>
+            <li>Pechuga de pollo a la plancha</li>
+            <li>Batido de frutas</li>
+        </ul>
+    </div>
+
+    <div class="contenido" id="articulos" style="display: none;">
+        <h2>Artículos sobre Nutrición</h2>
+        <p>Lee nuestros artículos sobre nutrición para obtener consejos útiles sobre cómo mantener una dieta balanceada y saludable.</p>
+        <ul>
+            <li>10 Alimentos que Promueven la Salud del Corazón</li>
+            <li>Consejos para una Alimentación Equilibrada</li>
+            <li>Importancia de las Vitaminas y Minerales</li>
+        </ul>
+    </div>
+
+    <div class="contenido" id="contacto" style="display: none;">
+        <h2>Contáctanos</h2>
+        <p>¡Nos encantaría saber de ti! Ponte en contacto con nosotros si tienes preguntas, comentarios o sugerencias.</p>
+        <p>Email: info@comidasaludable.com</p>
+        <p>Teléfono: 123-456-7890</p>
+    </div>
+
+    <footer>
+        GessenApp
+    </footer>
+
+    <script>
+        function mostrarContenido(id) {
+            // Oculta todos los contenidos
+            var contenidos = document.getElementsByClassName('contenido');
+            for (var i = 0; i < contenidos.length; i++) {
+                contenidos[i].style.display = 'none';
+            }
+            // Muestra el contenido correspondiente al ID proporcionado
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
