@@ -29,7 +29,7 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 nav {
@@ -87,6 +87,7 @@ footer {
 }
 
 h2 {
+    color: rgb(1, 63, 1);
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -236,10 +237,13 @@ ul li {
 }
 
 #inicio section h1 {
-    font-size: 20px;
+    color: rgb(1, 63, 1);
+    font-size: 30px;
+    margin-bottom: 8px;
 }
 
 #inicio section h2 {
+    color: rgb(1, 63, 1);
     text-align: left;
     margin-bottom: 8px;
 }
