@@ -61,7 +61,7 @@ main {
 .cont{
     display: flex;
     width: 600px;
-    height: 430px;
+    height: 250px;
     background-color: #e9ffeb;
     justify-content: center;
 }
@@ -83,18 +83,7 @@ main {
 
 .logo {
     display: flex;
-    margin-bottom: 20px;
-}
-
-.imagen{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
-
-.imagen2 {
-    width: 300px;
-    height: 300px;
+    justify-content: center;
 }
 
 footer {
