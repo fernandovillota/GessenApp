@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+    background-color: #e9ffeb;
+    color: black;
+}
+
+header{
+    background-color: rgb(47, 148, 0);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 30px; 
+}
+
+.login{
+    background-color: #e9ffeb;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.login h2{
+    color: #127705;
+    text-align: center;
+    margin-bottom: 9px;
+    padding: 30px;
+}
+
+.login section{
+    display: flex;
+    align-items: center;
+}
+
+.login section label{
+    margin-bottom: 25px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.login section input[type="email"],
+.login section input[type="password"]{
+    background-color: #e9ffeb;
+    margin: auto;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.login section input[type="checkbox"]{
+    margin-right:5px;
+    margin-bottom: 28px;
+}
+
+.login section a{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgb(36, 168, 40);
+    color: white;
+    margin-left: 240px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    border:solid 1px #04740e;
+}
+
+.login section a:hover{
+    background-color: #06800e;
+    color: white;
+    border: solid #045f0c 1px;
+}
