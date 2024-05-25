@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="en"> <!-- Inicio del documento HTML con lenguaje en español -->
+<head >
+    <meta charset="UTF-8">  <!-- interpreta los caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="Iniciar_Style.css"> <!-- Enlace al archivo CSS externo -->
+    <script defer src="Iniciar_main.js"></script>
+    <title>Registro</title>
+</HEAd>
+<body>
+    <h1 id="titulo"><strong><em>GessenApp</em></strong>
+    </h1>
+    <div class="container right-panel-active">
+
+        <!-- Sign Up-->
+        <div class="container_form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form_title">Registrate</h2>
+                <input type="text" placeholder="Usuario" class="input"/>
+                <input type="email" placeholder="Email" class="input"/>
+                <input type="password" placeholder="Contraseña" class="input"/>
+                <button class="btn">
+                    <a href="#" class="link1">Registrarse</a></button>
+            </form>
+        </div>
+
+        <!-- Sign In-->
+        <div class="container_form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form_title">Iniciar Secion</h2>
+                <input type="email" placeholder="Email" class="input"/>
+                <input type="password" placeholder="Contraseña" class="input">
+                <a href="#" class="link">¿Olvido su contraseña?</a>
+                <button class="btn">
+                    <a href="#" class="link1">Iniciar Secion</a></button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container_overlay">
+            <div class="overlay">
+                <div class="overlay_panel overlay--left">
+                    <button class="btn" id="signin">Iniciar Secion</button>
+                </div>
+                <div class="overlay_panel overlay--right">
+                    <button class="btn" id="signup">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Title.js"></script>
+</body>
+</html>

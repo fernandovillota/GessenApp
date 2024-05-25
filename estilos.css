@@ -23,12 +23,13 @@ body {
 header {
     background-color: #0f5a00;
     color: #fff;
-    padding: 30px 0;
+    padding: 10px;
     text-align: center;
+    height: 90px;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 60px;
 }
 
 nav {
@@ -83,12 +84,6 @@ footer {
     bottom: 0;
     width: 100%;
     height: 12%;
-}
-
-h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 h2 {
