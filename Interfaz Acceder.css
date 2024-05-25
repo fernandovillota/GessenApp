@@ -71,7 +71,7 @@ main{
     padding: 10px;
     border-radius: 4px;
     font-size: 17px;
-    border:solid 1px #04740e;
+    border:solid 2px #04740e;
 }
 
 .login section a:hover{
