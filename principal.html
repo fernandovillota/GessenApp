@@ -11,7 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Saludable</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="principal_estilos.css">
+    <script defer src="Principal_main.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
         <div class="contenido" id="inicio">
             <div class="logo">
                 <img src="logo.png" class="imagen" alt="">
-                <img src="fpx5KDp2RhOVqqDIYBAD-w.png" class="imagen2">
+                <img src="GesenAppFont.png" class="imagen2">
                 <img src="logo.png" class="imagen" alt="">
             </div>
             <section>
@@ -192,37 +193,11 @@
     </main>
 
     <footer>
-        <div class="logos">
-            <div class="fb">
-                <img src="cuadrado-3d-logotipo-facebook_125540-1565.avif">
-                <h5>facebook.com/GessenAppSaludable</h5>
-            </div>
-            <div class="ig">
-                <img src="logotipo-instagram_1045-436.avif">
-                <h5>@GessenApp_saludable</h5>
-            </div>
-            <div class="tw">
-                <img src="descarga.jpg">
-                <h5>@GessenAppAppSalud</h5>
-            </div>
-            <div class="tiktok">
-                <img src="png-clipart-tiktok-logo-vertical-social-media-icons.png">
-                <h5>@GessenApp.oficial</h5>
-            </div>
-        </div>
+        <img src="logoFacebook.avif" class="img">
+        <img src="logoInstagram.avif" class="img">
+        <img src="logoTiktok.png" class="img">
+        <img src="logotwiter.jpg" class="img">
+        <p>Facebook</p>
     </footer>
-
-    <script>
-        function mostrarContenido(id) {
-            // Oculta todos los contenidos
-            var contenidos = document.getElementsByClassName('contenido');
-            for (var i = 0; i < contenidos.length; i++) {
-                contenidos[i].style.display = 'none';
-            }
-            // Muestra el contenido correspondiente al ID proporcionado
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
 </body>
-
 </html>
