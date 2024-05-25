@@ -29,7 +29,7 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 nav {
@@ -235,8 +235,17 @@ ul li {
     padding: 50px 0;
 }
 
+#inicio section h1 {
+    font-size: 20px;
+}
+
 #inicio section h2 {
     text-align: left;
+    margin-bottom: 8px;
+}
+
+#inicio section p {
+    margin-bottom: 20px;
 }
 
 #inicio2 h2 {
