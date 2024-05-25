@@ -156,15 +156,33 @@ ul li {
     }
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.pie{
+    align-items: center;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    margin-inline-end: 100px;
+}
+
 .img{
-    width: 25px;
+    width: 30px;
     aspect-ratio: 1/1;
     object-fit: contain;
     mix-blend-mode: color-burn;
     filter: drop-shadow(
         0 0 10px rgba(0,0,0,.8)
     );
-    margin: 0 10%;
+}
+footer a{
+    text-decoration: none;
+    color: #000000;
+    padding: 2px;
 }
 
 .recetas {
