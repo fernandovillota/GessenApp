@@ -87,7 +87,7 @@ main {
 }
 
 footer {
-    background-color: #0f5a00;
+    background-color: #318819;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -187,7 +187,7 @@ footer{
     aspect-ratio: 1/1;
     object-fit: contain;
     filter: drop-shadow(
-        0 0 10px rgba(187, 187, 187, 0.9)
+        0 0 10px rgb(194, 253, 0)
     );
 }
 footer a{
