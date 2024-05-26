@@ -186,14 +186,13 @@ footer{
     width: 30px;
     aspect-ratio: 1/1;
     object-fit: contain;
-    mix-blend-mode: color-burn;
     filter: drop-shadow(
-        0 0 10px rgba(0,0,0,.8)
+        0 0 10px rgba(0,0,0,.9)
     );
 }
 footer a{
     text-decoration: none;
-    color: #000000;
+    color: white;
     padding: 2px;
 }
 
