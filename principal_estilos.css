@@ -187,7 +187,7 @@ footer{
     aspect-ratio: 1/1;
     object-fit: contain;
     filter: drop-shadow(
-        0 0 10px rgb(194, 253, 0)
+        0 0 10px rgb(255, 255, 255)
     );
 }
 footer a{
