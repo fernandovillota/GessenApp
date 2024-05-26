@@ -221,3 +221,22 @@ link{
         z-index: 5;
     }
 }
+
+.botonR {
+    display: flex;
+    justify-content: center;
+}
+
+.botonR section a {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #008997;
+
+    color: rgb(255, 255, 255);
+    background-attachment: scroll;
+    padding: 11px 18px;
+    border-radius: 40px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
