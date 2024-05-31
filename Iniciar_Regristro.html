@@ -1,6 +1,6 @@
-<!DOCTYPE html> 
-<html lang="es"> 
-<head >     
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del documento HTML con lenguaje en español -->
+<head >
     <meta charset="UTF-8">  <!-- interpreta los caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="Iniciar_Style.css"> <!-- Enlace al archivo CSS externo -->
@@ -14,25 +14,24 @@
 
         <!-- Sign Up-->
         <div class="container_form container--signup">
-            <form action="#" class="form" id="form1">
+            <form action="Formulario.html" class="form">
                 <h2 class="form_title">Registrate</h2>
-                <input type="text" placeholder="Usuario" class="input" required/>
-                <input type="email" placeholder="Email" class="input" required/>
-                <input type="password" placeholder="Contraseña" class="input" required/>
-                <button class="btn">
-                    <a href="#" class="link1" onclick="limpiarFormulario()">Registrarse</a></button>
+                <input type="text" placeholder="Usuario*" class="input" required/>
+                <input type="email" placeholder="Email*" class="input" required/>
+                <input type="password" placeholder="Contraseña*" class="input" required/>
+                <input type="password" placeholder="Confirmar Contraseña*" class="input" required/>
+                <input class="btn" type="submit" value="Registrarse">
             </form>
         </div>
 
         <!-- Sign In-->
         <div class="container_form container--signin">
-            <form action="#" class="form" id="form2">
+            <form action="principal 2.html" class="form">
                 <h2 class="form_title">Iniciar Sesión</h2>
-                <input type="email" placeholder="Email" class="input" required/>
-                <input type="password" placeholder="Contraseña" class="input" required />
+                <input type="email" placeholder="Email*" class="input" required/>
+                <input type="password" placeholder="Contraseña*" class="input"required />
                 <a href="#" class="link">¿Olvido su contraseña?</a>
-                <button class="btn">
-                    <a href="principal 2.html" class="link1">Iniciar Sesión</a></button>
+                <input class="btn" type="submit" value="Iniciar Sesión">
             </form>
         </div>
 
