@@ -111,7 +111,6 @@ ul li {
     background-color: #f3ffde; /* Color de fondo para la sección de ¿Quienes somos? */
     padding: 50px;
     padding-top: 20px;
-    padding-bottom: 100px;
 }
 
 #inicio2 {
@@ -125,7 +124,6 @@ ul li {
     background-color: #f3ffde; /* Color de fondo para la sección de recetas */
     padding: 50px;
     padding-top: 20px;
-    padding-bottom: 100px;
 }
 
 #articulos {
@@ -138,12 +136,12 @@ ul li {
     padding: 20px;
 }
 
-#PolíticaP {
+#PoliticaP {
     background-color: #f3ffde; /* Color de fondo para la sección de Política de Privacidad */
     padding: 20px;
 }
 
-#TérminosS {
+#TerminosS {
     background-color: #f3ffde; /* Color de fondo para la sección de Términos de Servicio */
     padding: 20px;
 }
@@ -177,6 +175,7 @@ footer{
     bottom: 0;
     width: 100%;
     height: 12%;
+    margin-top: 20px;
 }
 
 .pie{
@@ -186,6 +185,7 @@ footer{
     flex-direction: column;
     margin: 0 10%;
     margin-inline-end: 100px;
+    margin-top: 15px;
 }
 
 .img{
@@ -284,6 +284,20 @@ footer a{
     height: 60px;
 }
 
+#PoliticaP h4 {
+    color: rgb(1, 63, 1);
+    margin-bottom: 10px;
+}
+
+.politicaD {
+    margin-bottom: 10px;
+}
+
+.politicaD li {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
 .botones {
     display: flex;
     justify-content: center;
@@ -314,16 +328,24 @@ footer a{
     color: #083000;
 }
 
-
-.derechos-autor p {
-    margin: 5px 0;
+.derechos_Autor{
+    background-color: #2c7917;
+    padding: 15px;
+    text-align: center;
 }
 
-.derechos-autor a {
-    color: #fff;
+.derechos_Autor p {
+    text-decoration: none;
+    color: #ecffe6;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.derechos_Autor a {
+    color: #ecffe6;
     text-decoration: none;
 }
 
-.derechos-autor a:hover {
+.derechos_Autor a:hover {
     text-decoration: underline;
 }
