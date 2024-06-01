@@ -17,23 +17,43 @@
         <h4>Detalles de la cuenta</h4>
 
         <label for="email">Correo electrónico*</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" placeholder="Example@gmail.com" id="email" name="email" required>
 
         <label for="email">Confirmar Correo electrónico*</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" placeholder="Example@gmail.com" id="email" name="email" required>
       </div>
 
       <div class="datos-personales">
         <h4>Detalles Personales</h4>
 
-        <label for="nombre">Nombres*</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <label for="nombre">Nombre(s)*</label>
+        <input type="text" placeholder="Escribir Nombre(s) natural" id="nombre" name="nombre" required>
 
-        <label for="apellido">Apellidos*</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <label for="apellido">Apellido(s)*</label>
+        <input type="text" placeholder="Escribir Apellidos(s) natural" id="apellido" name="apellido" required>
+
+        <label for="Género">Género:</label>
+        <select id="Género" name="Género">
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+
+        <label for="telefono">Teléfono*</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="123-4567890" pattern="[0-9]{3}-[0-9]{7}" required>
+
+        <label for="Pais">País</label>
+        <input type="text" placeholder="Escribir Apellidos natural" value="Colombia" readonly>
+
+        <label for="lugar-nacimiento">Ciudad*</label>
+        <input type="text" id="lugar-nacimiento" name="lugar-nacimiento" required>
+
+      </div>
+
+        <div class="datos-salud">
+          <h4>Detalles de salud</h4>
 
         <label for="enfermedad">Enfermedad</label>
-        <input type="text" id="enfermedad" name="enfermedad">
+        <input type="text" placeholder="Describir su enfermedad alimentaria" id="enfermedad" name="enfermedad">
 
         <label for="dieta">Tipo de dieta</label>
         <select id="dieta" name="dieta">
@@ -44,16 +64,7 @@
           <option value="Alta en proteínas">Alta en proteínas</option>
           <option value="Cetogénica">Cetogénica</option>
           <option value="Paleo">Paleo</option>
-        </select>
-
-        <label for="telefono">Teléfono*</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="123-4567890" pattern="[0-9]{3}-[0-9]{7}" required>
-
-        <label for="Pais">País</label>
-        <input type="text" value="Colombia" readonly>
-
-        <label for="lugar-nacimiento">Ciudad*</label>
-        <input type="text" id="lugar-nacimiento" name="lugar-nacimiento" required>
+        </select> 
       </div>
 
       <input type="submit" value="Iniciar Sesión">

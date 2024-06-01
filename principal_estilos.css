@@ -303,3 +303,17 @@ footer a{
 .articulo a {
     color: #083000;
 }
+
+
+.derechos-autor p {
+    margin: 5px 0;
+}
+
+.derechos-autor a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.derechos-autor a:hover {
+    text-decoration: underline;
+}

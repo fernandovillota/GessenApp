@@ -55,6 +55,10 @@ main {
     margin-bottom: 20px;
 }
 
+.datos-salud {
+    margin-left: 40px;
+}
+
 .formulario input[type="submit"] {
     width: 150px;
     background-color: rgb(28, 163, 33);
