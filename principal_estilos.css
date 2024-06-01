@@ -138,6 +138,16 @@ ul li {
     padding: 20px;
 }
 
+#PolíticaP {
+    background-color: #f3ffde; /* Color de fondo para la sección de Política de Privacidad */
+    padding: 20px;
+}
+
+#TérminosS {
+    background-color: #f3ffde; /* Color de fondo para la sección de Términos de Servicio */
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
