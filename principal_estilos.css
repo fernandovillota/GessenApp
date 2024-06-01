@@ -220,6 +220,7 @@ footer a{
     background-color: rgb(228, 250, 178);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 .menu-item h3 {
