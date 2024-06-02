@@ -14,16 +14,15 @@ function mostrarContenido(id) {
 const miCheckbox = document.getElementById('checkveg');
 
 // Función que se ejecuta al cambiar el estado del checkbox
-function manejarCheckbox() {
-    if (miCheckbox.checked) {
-        document.getElementById("vegetariano").style.display = "none";
-        // Acción cuando el checkbox está marcado
-        console.log('Checkbox marcado');
-        // Aquí puedes llamar a la función que desees ejecutar
-        // cuando el checkbox está marcado.
-    } else {
-        document.getElementById("vegetariano").style.display = "block";
-        // Acción cuando el checkbox está desmarcado
+function mostrarEnfermedad(enfermedad) {
+    // Ocultar todas las secciones de recetas
+    var secciones = document.getElementsByClassName('contenido');
+    for (var i = 0; i < secciones.length; i++) {
+        secciones[i].style.display = 'none';
+    }
+    // Mostrar la sección específica según la enfermedad
+    var seccion = document.getElementById(enfermedad);
+    if (seccion) {
+        seccion.style.display = 'block';
     }
 }
-miCheckbox.addEventListener('change', manejarCheckbox);

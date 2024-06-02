@@ -4,349 +4,587 @@
     Fernando Villota Erazo
     Kevin Alexander Pantoja Males -->
 
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comida Saludable</title>
-    <link rel="stylesheet" type="text/css" href="principal_estilos.css">
-    <script defer src="Principal_main.js"></script>
-</head>
-
-<body>
-    <header>
-        <h1>GessenApp</h1>
-    </header>
-
-    <nav>
-        <a href="#" onclick="mostrarContenido('inicio')">¿Quiénes Somos?</a>
-        <a href="#" onclick="mostrarContenido('inicio2')">Inicio</a>
-        <a href="#" onclick="mostrarContenido('recetas')">Recetas</a>
-        <a href="#" onclick="mostrarContenido('articulos')">Artículos</a>
-        <a href="#" onclick="mostrarContenido('contacto')">Contacto</a>
-    </nav>
-
-    <main>
-        <div class="contenido" id="inicio">
-            <div class="logo">
-                <section class="cont">
-                    <img src="Img/1ps.jpg">
-                    <img src="Img/2ps.jpg">
-                    <img src="GesenAppFont.png">
-                    <img src="logo.png">
-                    <img src="Img/3ps.jpg">
-                    <img src="Img/4ps.jpg">
-                    <img src="Img/5ps.jpg">
-                </section>
-            </div>
-            <section>
-                <h1>GessenApp</h1>
-                <p>Conoce toda nuestra historia, quiénes somos, hacia dónde queremos llegar y cómo lo queremos lograr,
-                    aprende más de nosotros.</p>
-                <h2>Nuestra historia</h2>
-                <p>En el año de 2023, el 19 de noviembre, en reunión de profesores del Colegio mixto San Luis Gonzaga de
-                    Túquerres, se decidió fundar la aplicacion GessenApp,
-                    el nombre "GessenApp" surgió de la combinación de la abreviación alemana "Gourmet" y la abreviación
-                    inglesa "App",
-                    reflejando la visión de la empresa de ofrecer una experiencia culinaria de alta calidad a través de
-                    una aplicación móvil innovadora.</p>
-                <h2>¿Quiénes Somos?</h2>
-                <p>"GessenApp es una empresa dedicada a promover un estilo de vida saludable a través de la
-                    alimentación. Nos especializamos en ofrecer información, recetas y consejos nutricionales para
-                    ayudar a las personas a llevar una dieta equilibrada y saludable. Nuestro objetivo es inspirar a
-                    nuestros clientes a adoptar hábitos alimenticios más conscientes y nutritivos, brindándoles las
-                    herramientas y recursos necesarios para lograrlo. Creemos en el poder transformador de una dieta
-                    saludable y estamos comprometidos a proporcionar a nuestros clientes el apoyo y la orientación que
-                    necesitan para alcanzar sus objetivos de bienestar."</p>
-                <h2>Nuestra Mision</h2>
-                <p>"Nuestra misión es ofrecer a nuestros clientes una experiencia culinaria excepcional en la comodidad
-                    de sus hogares,
-                    proporcionando alimentos frescos, deliciosos y de alta calidad, preparados con pasión y atención al
-                    detalle."</p>
-                <h2>Nuestra Vision</h2>
-                <p>"Nos esforzamos por ser la primera opción de comida a domicilio para nuestros clientes,
-                    estableciendo un estándar de excelencia en la industria gastronómica."</p>
-            </section>
-        </div>
-        <div class="contenido" id="inicio2" style="display: block;">
-            <section id="inicio2">
-                <h2>Bienvenido a GessenApp</h2>
-                <p>Descubre una nueva forma de alimentarte con nuestros deliciosos platos saludables.</p>
-                <div id="slider">
-                    <img src="plato1.jpg" alt="Plato saludable 1">
-                    <img src="plato2.jpg" alt="Plato saludable 2">
-                    <img src="plato3.jpg" alt="Plato saludable 3">
-                </div>
-                <p>Únete a nuestra comunidad para recibir recetas exclusivas, consejos de nutrición y más.</p>
-                <div class="botones">
-                    <section>
-                        <a href="Iniciar_Regristro.html">Acceder</a>
+    <!DOCTYPE html>
+    <html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comida Saludable</title>
+        <link rel="stylesheet" type="text/css" href="principal_estilos.css">
+        <script defer src="Principal_main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>GessenApp</h1>
+        </header>
+    
+        <nav>
+            <a href="#" onclick="mostrarContenido('inicio')">¿Quiénes Somos?</a>
+            <a href="#" onclick="mostrarContenido('inicio2')">Inicio</a>
+            <a href="#" onclick="mostrarContenido('recetas')">Recetas</a>
+            <a href="#" onclick="mostrarContenido('articulos')">Artículos</a>
+            <a href="#" onclick="mostrarContenido('contacto')">Contacto</a>
+        </nav>
+    
+        <main>
+            <div class="contenido" id="inicio">
+                <div class="logo">
+                    <section class="cont">
+                        <img src="Img/1ps.jpg">
+                        <img src="Img/2ps.jpg">
+                        <img src="GesenAppFont.png">
+                        <img src="logo.png">
+                        <img src="Img/3ps.jpg">
+                        <img src="Img/4ps.jpg">
+                        <img src="Img/5ps.jpg">
                     </section>
                 </div>
-            </section>
-        </div>
-        <div class="contenido" id="recetas">
-            <div class="container">
-                <h2>Entradas</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h3>Ensalada Caprese</h3>
-                        <p>Tomate fresco, mozzarella de búfala, albahaca y aceite de oliva virgen extra.</p>
-                        <span class="price">$8.99</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3>Rollitos de Primavera</h3>
-                        <p>Vegetales frescos envueltos en papel de arroz, acompañados de salsa de soja baja en sodio.
-                        </p>
-                        <span class="price">$6.99</span>
-                    </div>
-                </div>
+                <section>
+                    <h1>GessenApp</h1>
+                    <p>Conoce toda nuestra historia, quiénes somos, hacia dónde queremos llegar y cómo lo queremos lograr,
+                        aprende más de nosotros.</p>
+                    <h2>Nuestra historia</h2>
+                    <p>En el año de 2023, el 19 de noviembre, en reunión de profesores del Colegio mixto San Luis Gonzaga de
+                        Túquerres, se decidió fundar la aplicacion GessenApp,
+                        el nombre "GessenApp" surgió de la combinación de la abreviación alemana "Gourmet" y la abreviación
+                        inglesa "App",
+                        reflejando la visión de la empresa de ofrecer una experiencia culinaria de alta calidad a través de
+                        una aplicación móvil innovadora.</p>
+                    <h2>¿Quiénes Somos?</h2>
+                    <p>"GessenApp es una empresa dedicada a promover un estilo de vida saludable a través de la
+                        alimentación. Nos especializamos en ofrecer información, recetas y consejos nutricionales para
+                        ayudar a las personas a llevar una dieta equilibrada y saludable. Nuestro objetivo es inspirar a
+                        nuestros clientes a adoptar hábitos alimenticios más conscientes y nutritivos, brindándoles las
+                        herramientas y recursos necesarios para lograrlo. Creemos en el poder transformador de una dieta
+                        saludable y estamos comprometidos a proporcionar a nuestros clientes el apoyo y la orientación que
+                        necesitan para alcanzar sus objetivos de bienestar."</p>
+                    <h2>Nuestra Mision</h2>
+                    <p>"Nuestra misión es ofrecer a nuestros clientes una experiencia culinaria excepcional en la comodidad
+                        de sus hogares,
+                        proporcionando alimentos frescos, deliciosos y de alta calidad, preparados con pasión y atención al
+                        detalle."</p>
+                    <h2>Nuestra Vision</h2>
+                    <p>"Nos esforzamos por ser la primera opción de comida a domicilio para nuestros clientes,
+                        estableciendo un estándar de excelencia en la industria gastronómica."</p>
+                </section>
             </div>
-            </section>
-
-            <section id="platos-principales" class="menu-section">
-                <div class="container">
-                    <h2>Platos Principales</h2>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <h3>Filete de Salmón al Horno</h3>
-                            <p>Salmón fresco horneado con hierbas aromáticas, servido con arroz integral y espárragos al
-                                vapor.</p>
-                            <span class="price">$18.99</span>
-                        </div>
-                        <div class="menu-item">
-                            <h3>Pollo a la Parrilla con Verduras</h3>
-                            <p>Pechuga de pollo a la parrilla con una mezcla de verduras asadas, acompañado de puré de
-                                batata.</p>
-                            <span class="price">$15.99</span>
-                        </div>
+            <div class="contenido" id="inicio2" style="display: block;">
+                <section id="inicio2">
+                    <h2>Bienvenido a GessenApp</h2>
+                    <p>Descubre una nueva forma de alimentarte con nuestros deliciosos platos saludables.</p>
+                    <div id="slider">
+                        <img src="plato1.jpg" alt="Plato saludable 1">
+                        <img src="plato2.jpg" alt="Plato saludable 2">
+                        <img src="plato3.jpg" alt="Plato saludable 3">
                     </div>
-                </div>
-            </section>
-
-            <section id="postres" class="menu-section">
-                <div class="container">
-                    <h2>Postres</h2>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <h3>Tarta de Manzana Casera</h3>
-                            <p>Deliciosa tarta de manzana casera con una base crujiente y un relleno suave y dulce.</p>
+                    <p>Únete a nuestra comunidad para recibir recetas exclusivas, consejos de nutrición y más.</p>
+                    <div class="botones">
+                        <section>
+                            <a href="Iniciar_Regristro.html">Acceder</a>
+                        </section>
+                    </div>
+                </section>
+            </div>
+    
+            <div class="contenido" id="recetas">
+                <nav class="menu-vertical">
+                    <a href="#" onclick="mostrarEnfermedad('diabetes')">Diabetes</a>
+                    <a href="#" onclick="mostrarEnfermedad('hipertension')">Hipertensión</a>
+                    <a href="#" onclick="mostrarEnfermedad('problemas_patologicos')">Problemas Patológicos</a>
+                    <a href="#" onclick="mostrarEnfermedad('obesidad')">Obesidad</a>
+                </nav>
+                <img class="menu-receta" src="1000_F_199609270_yHMPATKetWgCa97Wq5UhXNetNFgP2sWq.jpg" alt="">
+            </div>
+    
+    
+            <div class="contenido" id="diabetes" style="display: none;">
+                <ul class="submenu">
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de quinoa y vegetales</h3>
+                            <p>Quinoa, tomate, pepino, pimiento, cebolla roja, vinagreta de limón.</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Salmón a la parrilla con brócoli al vapor</h3>
+                            <p>Salmón fresco, brócoli, aceite de oliva, ajo, limón.</p>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pollo al horno con espárragos</h3>
+                            <p>Pollo, espárragos, aceite de oliva, romero, pimienta negra.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Tortilla de claras de huevo con espinacas</h3>
+                            <p>Claras de huevo, espinacas, cebolla, pimiento, aceite de oliva.</p>
                             <span class="price">$7.99</span>
                         </div>
-                        <div class="menu-item">
-                            <h3>Helado de Frutas Naturales</h3>
-                            <p>Helado casero hecho con frutas frescas de temporada, sin azúcares añadidos.</p>
-                            <span class="price">$5.99</span>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Filete de pescado al horno con vegetales</h3>
+                            <p>Pescado blanco, zanahoria, calabacín, champiñones, limón.</p>
+                            <span class="price">$11.99</span>
                         </div>
-                    </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pavo a la plancha con puré de coliflor</h3>
+                            <p>Pavo, coliflor, leche de almendra, ajo, nuez moscada.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Brócoli al vapor con almendras</h3>
+                            <p>Brócoli, almendras, aceite de oliva, ajo, sal.</p>
+                            <span class="price">$6.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de aguacate y langostinos</h3>
+                            <p>Aguacate, langostinos, lechuga, tomate cherry, vinagreta de limón.</p>
+                            <span class="price">$13.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Chuletas de cerdo a la plancha con piña</h3>
+                            <p>Chuletas de cerdo, piña, salsa de soja baja en sodio, jengibre.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Calabacín relleno de carne magra</h3>
+                            <p>Calabacín, carne de ternera magra, cebolla, tomate, queso parmesano.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+    
+            <div class="contenido" id="hipertension" style="display: none;">
+                <ul class="submenu">
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de quinoa y vegetales</h3>
+                            <p>Quinoa, tomate, pepino, pimiento, cebolla roja, vinagreta de limón.</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Salmón a la parrilla con brócoli al vapor</h3>
+                            <p>Salmón fresco, brócoli, aceite de oliva, ajo, limón.</p>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pollo al horno con espárragos</h3>
+                            <p>Pollo, espárragos, aceite de oliva, romero, pimienta negra.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Tortilla de claras de huevo con espinacas</h3>
+                            <p>Claras de huevo, espinacas, cebolla, pimiento, aceite de oliva.</p>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Filete de pescado al horno con vegetales</h3>
+                            <p>Pescado blanco, zanahoria, calabacín, champiñones, limón.</p>
+                            <span class="price">$11.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pavo a la plancha con puré de coliflor</h3>
+                            <p>Pavo, coliflor, leche de almendra, ajo, nuez moscada.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Brócoli al vapor con almendras</h3>
+                            <p>Brócoli, almendras, aceite de oliva, ajo, sal.</p>
+                            <span class="price">$6.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de aguacate y langostinos</h3>
+                            <p>Aguacate, langostinos, lechuga, tomate cherry, vinagreta de limón.</p>
+                            <span class="price">$13.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Chuletas de cerdo a la plancha con piña</h3>
+                            <p>Chuletas de cerdo, piña, salsa de soja baja en sodio, jengibre.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Calabacín relleno de carne magra</h3>
+                            <p>Calabacín, carne de ternera magra, cebolla, tomate, queso parmesano.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="contenido" id="problemas_patologicos" style="display: none;">
+                <ul class="submenu">
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de quinoa y vegetales</h3>
+                            <p>Quinoa, tomate, pepino, pimiento, cebolla roja, vinagreta de limón.</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Salmón a la parrilla con brócoli al vapor</h3>
+                            <p>Salmón fresco, brócoli, aceite de oliva, ajo, limón.</p>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pollo al horno con espárragos</h3>
+                            <p>Pollo, espárragos, aceite de oliva, romero, pimienta negra.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Tortilla de claras de huevo con espinacas</h3>
+                            <p>Claras de huevo, espinacas, cebolla, pimiento, aceite de oliva.</p>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Filete de pescado al horno con vegetales</h3>
+                            <p>Pescado blanco, zanahoria, calabacín, champiñones, limón.</p>
+                            <span class="price">$11.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pavo a la plancha con puré de coliflor</h3>
+                            <p>Pavo, coliflor, leche de almendra, ajo, nuez moscada.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Brócoli al vapor con almendras</h3>
+                            <p>Brócoli, almendras, aceite de oliva, ajo, sal.</p>
+                            <span class="price">$6.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de aguacate y langostinos</h3>
+                            <p>Aguacate, langostinos, lechuga, tomate cherry, vinagreta de limón.</p>
+                            <span class="price">$13.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Chuletas de cerdo a la plancha con piña</h3>
+                            <p>Chuletas de cerdo, piña, salsa de soja baja en sodio, jengibre.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Calabacín relleno de carne magra</h3>
+                            <p>Calabacín, carne de ternera magra, cebolla, tomate, queso parmesano.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="contenido" id="obesidad" style="display: none;">
+                <ul class="submenu">
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de quinoa y vegetales</h3>
+                            <p>Quinoa, tomate, pepino, pimiento, cebolla roja, vinagreta de limón.</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Salmón a la parrilla con brócoli al vapor</h3>
+                            <p>Salmón fresco, brócoli, aceite de oliva, ajo, limón.</p>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pollo al horno con espárragos</h3>
+                            <p>Pollo, espárragos, aceite de oliva, romero, pimienta negra.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Tortilla de claras de huevo con espinacas</h3>
+                            <p>Claras de huevo, espinacas, cebolla, pimiento, aceite de oliva.</p>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Filete de pescado al horno con vegetales</h3>
+                            <p>Pescado blanco, zanahoria, calabacín, champiñones, limón.</p>
+                            <span class="price">$11.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Pavo a la plancha con puré de coliflor</h3>
+                            <p>Pavo, coliflor, leche de almendra, ajo, nuez moscada.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Brócoli al vapor con almendras</h3>
+                            <p>Brócoli, almendras, aceite de oliva, ajo, sal.</p>
+                            <span class="price">$6.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Ensalada de aguacate y langostinos</h3>
+                            <p>Aguacate, langostinos, lechuga, tomate cherry, vinagreta de limón.</p>
+                            <span class="price">$13.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Chuletas de cerdo a la plancha con piña</h3>
+                            <p>Chuletas de cerdo, piña, salsa de soja baja en sodio, jengibre.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item2">
+                            <h3>Calabacín relleno de carne magra</h3>
+                            <p>Calabacín, carne de ternera magra, cebolla, tomate, queso parmesano.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="contenido" id="articulos">
+                <h2>Artículos Recientes</h2>
+                <div class="articulo">
+                    <h3>Los Beneficios de una Dieta Rica en Fibra</h3>
+                    <p>Descubre cómo una dieta rica en fibra puede mejorar tu salud digestiva y ayudarte a mantener un peso
+                        saludable.</p>
+                    <a href="#">Leer más</a>
+                    <br>
+                    <br>
                 </div>
-            </section>
-
-            <section id="bebidas" class="menu-section">
-                <div class="container">
-                    <h2>Bebidas</h2>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <h3>Zumo de Naranja Natural</h3>
-                            <p>Zumo de naranja recién exprimido, rico en vitamina C y antioxidantes.</p>
-                            <span class="price">$3.99</span>
-                        </div>
-                        <div class="menu-item">
-                            <h3>Té Verde Helado</h3>
-                            <p>Té verde helado refrescante, con un toque de limón y menta.</p>
-                            <span class="price">$2.99</span>
-                        </div>
-                    </div>
+                <div class="articulo">
+                    <h3>Consejos para una Alimentación Equilibrada</h3>
+                    <p>Aprende algunos consejos simples para mantener una alimentación equilibrada y nutritiva en tu día a
+                        día.</p>
+                    <a href="#">Leer más</a>
+                    <br>
+                    <br>
                 </div>
-            </section>
-        </div>
-
-        <div class="contenido" id="articulos">
-            <h2>Artículos Recientes</h2>
-            <div class="articulo">
-                <h3>Los Beneficios de una Dieta Rica en Fibra</h3>
-                <p>Descubre cómo una dieta rica en fibra puede mejorar tu salud digestiva y ayudarte a mantener un peso
-                    saludable.</p>
-                <a href="#">Leer más</a>
-                <br>
-                <br>
+                <div class="articulo">
+                    <h3>Estrategias para Reducir el Estrés en tu Vida Diaria</h3>
+                    <p>Explora diferentes estrategias que puedes implementar para reducir el estrés y mejorar tu bienestar
+                        general.</p>
+                    <a href="#">Leer más</a>
+                </div>
             </div>
-            <div class="articulo">
-                <h3>Consejos para una Alimentación Equilibrada</h3>
-                <p>Aprende algunos consejos simples para mantener una alimentación equilibrada y nutritiva en tu día a
-                    día.</p>
-                <a href="#">Leer más</a>
-                <br>
-                <br>
+    
+            <div class="contenido" id="contacto">
+                <h2>Contáctanos</h2>
+    
+    
+                <p>Queremos que te pongas en contacto con nosotros para compartir tus comentarios, opiniones y
+                    necesidades o para recibir una asesoría completa sobre un producto o servicio de tu interés.
+                    Según la información que necesites, puedes hacerlo mediante las siguientes opciones:</p>
+    
+                <p>Email: info@comidasaludable.com</p>
+    
+                <p>Teléfono: 123-456-7890</p>
+    
             </div>
-            <div class="articulo">
-                <h3>Estrategias para Reducir el Estrés en tu Vida Diaria</h3>
-                <p>Explora diferentes estrategias que puedes implementar para reducir el estrés y mejorar tu bienestar
-                    general.</p>
-                <a href="#">Leer más</a>
+    
+            <div class="contenido" id="PoliticaP">
+                <h2>Política de Privacidad</h2>
+    
+                <p>En GessenApp, valoramos y respetamos su privacidad. Esta Política de Privacidad describe cómo
+                    recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza nuestro sitio web y
+                    nuestros servicios. Al acceder a nuestro sitio web y utilizar nuestros servicios, usted acepta los
+                    términos y condiciones de esta Política de Privacidad.</p>
+    
+                <h4>1. Información que Recopilamos.</h4>
+                <ul class="politicaD">
+                    <li>
+                        Información Personal: Podemos recopilar información personal que usted nos proporciona
+                        directamente,
+                        como su nombre, dirección de correo electrónico, número de teléfono, dirección postal, y
+                        cualquier otra
+                        información que decida compartir con nosotros.
+                    </li>
+    
+                    <li>
+                        Información de Uso: Recopilamos información sobre cómo utiliza nuestro sitio web, incluidos
+                        datos de tráfico, datos de ubicación, registros web y otros datos de comunicación.
+                    </li>
+    
+                    <li>
+                        Información Técnica: Podemos recopilar información técnica sobre su dispositivo, incluyendo
+                        la dirección IP, tipo de navegador, sistema operativo y la versión, y otra información técnica.
+                    </li>
+                </ul>
+    
+                <h4>2. Uso de la Información.</h4>
+                <ul class="politicaD">
+                    <li>
+                        Proveer y Mejorar Servicios: Utilizamos la información recopilada para proporcionar, mantener,
+                        proteger y mejorar nuestros servicios, así como para desarrollar nuevos servicios.
+                    </li>
+    
+                    <li>
+                        Comunicaciones: Podemos utilizar su información personal para comunicarnos con usted, responder a
+                        sus consultas, enviarle actualizaciones y novedades sobre nuestros servicios y promociones.
+                    </li>
+    
+                    <li>
+                        Seguridad: Utilizamos la información para monitorear y mejorar la seguridad de nuestro sitio web y
+                        nuestros servicios.
+                    </li>
+    
+                    <li>
+                        Personalización: Podemos usar su información para personalizar su experiencia en nuestro sitio web y
+                        mostrar contenido relevante.
+                    </li>
+                </ul>
+    
+                <h4>3. Compartir Información</h4>
+                <ul class="politicaD">
+                    <li>
+                        Terceros de Confianza: Podemos compartir su información con terceros de confianza que nos ayudan a
+                        operar nuestro sitio web, realizar nuestras actividades comerciales, o proporcionarle servicios,
+                        siempre y cuando estos terceros se comprometan a mantener esta información confidencial.
+                    </li>
+    
+                    <li>
+                        Requisitos Legales: Podemos divulgar su información si así lo exige la ley o en respuesta a
+                        solicitudes legales de las autoridades.
+                    </li>
+    
+                    <li>
+                        Transferencias Comerciales: En caso de una fusión, adquisición, o venta de activos, su información
+                        podría ser transferida a la entidad adquirente.
+                    </li>
+                </ul>
+    
+                <h4>4. Seguridad de la Información</h4>
+                <ul class="politicaD">
+                    <li>
+                        Tomamos medidas razonables para proteger su información personal contra accesos no autorizados,
+                        alteraciones, divulgaciones o destrucción. Sin embargo, ninguna transmisión de datos a través de
+                        Internet o sistema de almacenamiento es completamente segura, por lo que no podemos garantizar la
+                        seguridad absoluta.
+                    </li>
+                </ul>
+    
+                <h4>5. Sus Derechos</h4>
+                <ul class="politicaD">
+                    <li>
+                        Acceso y Corrección: Usted tiene derecho a acceder y corregir la información personal que tenemos
+                        sobre usted.
+                    </li>
+    
+                    <li>
+                        Eliminación: Puede solicitar la eliminación de su información personal en cualquier momento, y
+                        nosotros cumpliremos con su solicitud en la medida en que no exista una obligación legal para
+                        retener la información.
+                    </li>
+    
+                    <li>
+                        Opciones de Marketing: Puede optar por no recibir comunicaciones promocionales siguiendo las
+                        instrucciones de cancelación de suscripción en dichos mensajes.
+                    </li>
+                </ul>
+    
+                <h4>6. Cookies y Tecnologías Similares</h4>
+                <ul class="politicaD">
+                    <li>
+                        Usamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web, analizar el
+                        tráfico y personalizar el contenido. Puede configurar su navegador para rechazar cookies, pero esto
+                        podría afectar la funcionalidad del sitio.
+                    </li>
+                </ul>
+    
+                <h4>7. Enlaces a Otros Sitios Web</h4>
+                <ul class="politicaD">
+                    <li>
+                        Nuestro sitio web puede contener enlaces a otros sitios web que no son operados por nosotros. No
+                        tenemos control sobre el contenido y las prácticas de privacidad de esos sitios, por lo que le
+                        recomendamos revisar sus políticas de privacidad.
+                    </li>
+                </ul>
+    
+                <h4>8. Cambios a Esta Política de Privacidad</h4>
+                <ul class="politicaD">
+                    <li>
+                        Podemos actualizar esta Política de Privacidad ocasionalmente. Le notificaremos sobre cualquier
+                        cambio publicando la nueva política en esta página. Su uso continuado de nuestro sitio web después
+                        de dichos cambios constituye su aceptación de los mismos.
+                    </li>
+                </ul>
             </div>
-        </div>
-
-        <div class="contenido" id="contacto">
-            <h2>Contáctanos</h2>
-
-
-            <p>Queremos que te pongas en contacto con nosotros para compartir tus comentarios, opiniones y
-                necesidades o para recibir una asesoría completa sobre un producto o servicio de tu interés.
-                Según la información que necesites, puedes hacerlo mediante las siguientes opciones:</p>
-
-            <p>Email: info@comidasaludable.com</p>
-
-            <p>Teléfono: 123-456-7890</p>
-
-        </div>
-
-        <div class="contenido" id="PoliticaP">
-            <h2>Política de Privacidad</h2>
-
-            <p>En GessenApp, valoramos y respetamos su privacidad. Esta Política de Privacidad describe cómo
-                recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza nuestro sitio web y
-                nuestros servicios. Al acceder a nuestro sitio web y utilizar nuestros servicios, usted acepta los
-                términos y condiciones de esta Política de Privacidad.</p>
-
-            <h4>1. Información que Recopilamos.</h4>
-            <ul class="politicaD">
-                <li>
-                    Información Personal: Podemos recopilar información personal que usted nos proporciona
-                    directamente,
-                    como su nombre, dirección de correo electrónico, número de teléfono, dirección postal, y
-                    cualquier otra
-                    información que decida compartir con nosotros.
-                </li>
-
-                <li>
-                    Información de Uso: Recopilamos información sobre cómo utiliza nuestro sitio web, incluidos
-                    datos de tráfico, datos de ubicación, registros web y otros datos de comunicación.
-                </li>
-
-                <li>
-                    Información Técnica: Podemos recopilar información técnica sobre su dispositivo, incluyendo
-                    la dirección IP, tipo de navegador, sistema operativo y la versión, y otra información técnica.
-                </li>
-            </ul>
-
-            <h4>2. Uso de la Información.</h4>
-            <ul class="politicaD">
-                <li>
-                    Proveer y Mejorar Servicios: Utilizamos la información recopilada para proporcionar, mantener,
-                    proteger y mejorar nuestros servicios, así como para desarrollar nuevos servicios.
-                </li>
-
-                <li>
-                    Comunicaciones: Podemos utilizar su información personal para comunicarnos con usted, responder a
-                    sus consultas, enviarle actualizaciones y novedades sobre nuestros servicios y promociones.
-                </li>
-
-                <li>
-                    Seguridad: Utilizamos la información para monitorear y mejorar la seguridad de nuestro sitio web y
-                    nuestros servicios.
-                </li>
-
-                <li>
-                    Personalización: Podemos usar su información para personalizar su experiencia en nuestro sitio web y
-                    mostrar contenido relevante.
-                </li>
-            </ul>
-
-            <h4>3. Compartir Información</h4>
-            <ul class="politicaD">
-                <li>
-                    Terceros de Confianza: Podemos compartir su información con terceros de confianza que nos ayudan a
-                    operar nuestro sitio web, realizar nuestras actividades comerciales, o proporcionarle servicios,
-                    siempre y cuando estos terceros se comprometan a mantener esta información confidencial.
-                </li>
-
-                <li>
-                    Requisitos Legales: Podemos divulgar su información si así lo exige la ley o en respuesta a
-                    solicitudes legales de las autoridades.
-                </li>
-
-                <li>
-                    Transferencias Comerciales: En caso de una fusión, adquisición, o venta de activos, su información
-                    podría ser transferida a la entidad adquirente.
-                </li>
-            </ul>
-
-            <h4>4. Seguridad de la Información</h4>
-            <ul class="politicaD">
-                <li>
-                    Tomamos medidas razonables para proteger su información personal contra accesos no autorizados,
-                    alteraciones, divulgaciones o destrucción. Sin embargo, ninguna transmisión de datos a través de
-                    Internet o sistema de almacenamiento es completamente segura, por lo que no podemos garantizar la
-                    seguridad absoluta.
-                </li>
-            </ul>
-
-            <h4>5. Sus Derechos</h4>
-            <ul class="politicaD">
-                <li>
-                    Acceso y Corrección: Usted tiene derecho a acceder y corregir la información personal que tenemos
-                    sobre usted.
-                </li>
-
-                <li>
-                    Eliminación: Puede solicitar la eliminación de su información personal en cualquier momento, y
-                    nosotros cumpliremos con su solicitud en la medida en que no exista una obligación legal para
-                    retener la información.
-                </li>
-
-                <li>
-                    Opciones de Marketing: Puede optar por no recibir comunicaciones promocionales siguiendo las
-                    instrucciones de cancelación de suscripción en dichos mensajes.
-                </li>
-            </ul>
-
-            <h4>6. Cookies y Tecnologías Similares</h4>
-            <ul class="politicaD">
-                <li>
-                    Usamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web, analizar el
-                    tráfico y personalizar el contenido. Puede configurar su navegador para rechazar cookies, pero esto
-                    podría afectar la funcionalidad del sitio.
-                </li>
-            </ul>
-
-            <h4>7. Enlaces a Otros Sitios Web</h4>
-            <ul class="politicaD">
-                <li>
-                    Nuestro sitio web puede contener enlaces a otros sitios web que no son operados por nosotros. No
-                    tenemos control sobre el contenido y las prácticas de privacidad de esos sitios, por lo que le
-                    recomendamos revisar sus políticas de privacidad.
-                </li>
-            </ul>
-
-            <h4>8. Cambios a Esta Política de Privacidad</h4>
-            <ul class="politicaD">
-                <li>
-                    Podemos actualizar esta Política de Privacidad ocasionalmente. Le notificaremos sobre cualquier
-                    cambio publicando la nueva política en esta página. Su uso continuado de nuestro sitio web después
-                    de dichos cambios constituye su aceptación de los mismos.
-                </li>
-            </ul>
-        </div>
-
-        <div class="contenido" id="TerminosS">
-            <h2>Términos de Servicio</h2>
-
-            <p>Bienvenido a GessenApp, una aplicación dedicada a ofrecer comida saludable.
-                Estos Términos de Servicio rigen su uso de nuestra aplicación y servicios. Al descargar, 
-                instalar y usar GessenApp, usted acepta cumplir con estos términos. 
-                Si no está de acuerdo con estos términos, no debe utilizar nuestra aplicación.</p>
-
+    
+            <div class="contenido" id="TerminosS">
+                <h2>Términos de Servicio</h2>
+    
+                <p>Bienvenido a GessenApp, una aplicación dedicada a ofrecer comida saludable.
+                    Estos Términos de Servicio rigen su uso de nuestra aplicación y servicios. Al descargar,
+                    instalar y usar GessenApp, usted acepta cumplir con estos términos.
+                    Si no está de acuerdo con estos términos, no debe utilizar nuestra aplicación.</p>
+    
                 <h4>1. Aceptación de los Términos</h4>
                 <ul class="politicaD">
                     <li>
-                        Al utilizar GessenApp, usted acepta estos Términos de Servicio y nuestra Política de Privacidad. 
+                        Al utilizar GessenApp, usted acepta estos Términos de Servicio y nuestra Política de Privacidad.
                         Si no acepta estos términos, debe dejar de usar la aplicación de inmediato.
                     </li>
                 </ul>
-
+    
                 <h4>2. Restricciones</h4>
                 <ul class="politicaD">
                     <li>
@@ -361,74 +599,79 @@
                         con la operatividad o seguridad de la aplicación.
                     </li>
                 </ul>
-
+    
                 <h4>3. Contenido</h4>
                 <ul class="politicaD">
                     <li>
-                        Todo el contenido disponible en GessenApp, incluyendo recetas, imágenes, texto, gráficos y logos, es propiedad de GessenApp
+                        Todo el contenido disponible en GessenApp, incluyendo recetas, imágenes, texto, gráficos y logos, es
+                        propiedad de GessenApp
                         o de sus licenciantes y está protegido por derechos de autor y otras leyes de propiedad intelectual.
                     </li>
                 </ul>
-
+    
                 <h4>4. Limitación de Responsabilidad</h4>
                 <ul class="politicaD">
                     <li>
-                        GessenApp se proporciona "tal cual" y "según disponibilidad". No garantizamos que la aplicación estará libre de errores,
+                        GessenApp se proporciona "tal cual" y "según disponibilidad". No garantizamos que la aplicación
+                        estará libre de errores,
                         segura o ininterrumpida, ni que cualquier información proporcionada sea precisa o confiable.
                     </li>
-
+    
                     <li>
-                        En la máxima medida permitida por la ley, GessenApp no será responsable de ningún daño indirecto, 
-                        incidental, especial, consecuente o punitivo, incluyendo, pero no limitado a, pérdida de beneficios, datos o uso.
+                        En la máxima medida permitida por la ley, GessenApp no será responsable de ningún daño indirecto,
+                        incidental, especial, consecuente o punitivo, incluyendo, pero no limitado a, pérdida de beneficios,
+                        datos o uso.
                     </li>
                 </ul>
-
-                <h4>4. Terminación</h4>
+    
+                <h4>5. Terminación</h4>
                 <ul class="politicaD">
                     <li>
-                        Usted puede dejar de usar GessenApp en cualquier momento y puede desinstalar la aplicación de su dispositivo.
+                        Usted puede dejar de usar GessenApp en cualquier momento y puede desinstalar la aplicación de su
+                        dispositivo.
                     </li>
                 </ul>
-
-                <h4>5. Cambios a los Términos</h4>
+    
+                <h4>6. Cambios a los Términos</h4>
                 <ul class="politicaD">
                     <li>
-                        Podemos modificar estos Términos de Servicio en cualquier momento. Publicaremos cualquier cambio en esta página 
-                        y actualizaremos la fecha de "Última actualización" en la parte superior de estos términos. 
-                        Su uso continuado de GessenApp después de la publicación de cambios constituye su aceptación de dichos cambios.
+                        Podemos modificar estos Términos de Servicio en cualquier momento. Publicaremos cualquier cambio en
+                        esta página
+                        y actualizaremos la fecha de "Última actualización" en la parte superior de estos términos.
+                        Su uso continuado de GessenApp después de la publicación de cambios constituye su aceptación de
+                        dichos cambios.
                     </li>
                 </ul>
-                
-
-        </div>
-
-    </main>
-
-    <footer>
-        <section class="pie">
-            <img src="logoFacebook.png" class="img">
-            <a href="#">Facebook </a>
+            </div>
+    
+        </main>
+    
+        <footer>
+            <section class="pie">
+                <img src="logoFacebook.png" class="img">
+                <a href="#">Facebook </a>
+            </section>
+            <section class="pie">
+                <img src="logoInstagram.jpeg" class="img">
+                <a href="#">Instagram</a>
+            </section>
+            <section class="pie">
+                <img src="logoTiktok.png" class="img">
+                <a href="#">Tiktok </a>
+            </section>
+            <section class="pie">
+                <img src="logoX.png" class="img">
+                <a href="#">Twitter </a>
+            </section>
+        </footer>
+        <section class="derechos_Autor">
+            <p>&copy; <!-- -->2024<!-- --> GessenApp Inc. All rights reserved.</p>
+            <p>
+                <a href="#" onclick="mostrarContenido('PoliticaP')">Política de Privacidad</a> |
+                <a href="#" onclick="mostrarContenido('TerminosS')">Términos de Servicio</a> |
+                <a href="#" onclick="mostrarContenido('contacto')">Contacto</a>
+            </p>
         </section>
-        <section class="pie">
-            <img src="logoInstagram.jpeg" class="img">
-            <a href="#">Instagram</a>
-        </section>
-        <section class="pie">
-            <img src="logoTiktok.png" class="img">
-            <a href="#">Tiktok </a>
-        </section>
-        <section class="pie">
-            <img src="logoX.png" class="img">
-            <a href="#">Twitter </a>
-        </section>
-    </footer>
-    <section class="derechos_Autor">
-        <p>&copy; <!-- -->2024<!-- --> GessenApp Inc. All rights reserved.</p>
-        <p>
-            <a href="#" onclick="mostrarContenido('PoliticaP')">Política de Privacidad</a> |
-            <a href="#" onclick="mostrarContenido('TerminosS')">Términos de Servicio</a> |
-            <a href="#" onclick="mostrarContenido('contacto')">Contacto</a>
-        </p>
-    </section>
-</body>
-</html>
+    </body>
+    
+    </html>

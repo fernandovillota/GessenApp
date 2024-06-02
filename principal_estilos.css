@@ -1,4 +1,5 @@
 /* Resetear estilos predeterminados */
+/* Resetear estilos predeterminados */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body {
     padding: 0;
     background-color: #e9ffeb;
     color: black;
+    
 }
 
 .container {
@@ -91,6 +93,7 @@ h2 {
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
+    
 }
 
 p {
@@ -220,7 +223,6 @@ footer a{
     background-color: rgb(228, 250, 178);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    display: block;
 }
 
 .menu-item h3 {
@@ -290,11 +292,6 @@ footer a{
     margin-bottom: 10px;
 }
 
-#TerminosS h4 {
-    color: rgb(1, 63, 1);
-    margin-bottom: 10px;
-}
-
 .politicaD {
     margin-bottom: 10px;
 }
@@ -302,6 +299,11 @@ footer a{
 .politicaD li {
     list-style-type: disc;
     margin-left: 30px;
+}
+
+#TerminosS h4 {
+    color: rgb(1, 63, 1);
+    margin-bottom: 10px;
 }
 
 .botones {
@@ -354,4 +356,57 @@ footer a{
 
 .derechos_Autor a:hover {
     text-decoration: underline;
+}
+
+.menu-item2 {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco para contrastar */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alineación central del contenido */
+}
+
+.menu-item2 h3 {
+    margin-bottom: 5px;
+}
+
+.menu-item2 p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.menu-item2 .price {
+    font-weight: bold;
+}
+
+/* Estilos para la lista de elementos */
+.submenu {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Utilizamos flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permitimos que los elementos se envuelvan en múltiples líneas */
+    justify-content: center; /* Centramos horizontalmente los elementos */
+}
+
+.submenu li {
+    margin: 0 10px 20px; /* Añadimos márgenes a los elementos */
+    flex: 1 0 200px; /* Permitimos que los elementos crezcan y mantengan un ancho máximo */
+}
+
+/* Estilos adicionales */
+/* Opcional: Estilos para el hover */
+.menu-item2:hover {
+    background-color: #45a049; /* Cambiamos el color de fondo al pasar el mouse */
+    transition: background-color 0.3s ease;
+}
+.menu-receta{
+   
+        margin-left: 25%;
+        width: 640px; 
+        padding: 50px;
+        font-family: 'Arial', sans-serif; 
+        color: #33475b;    
+    
 }
