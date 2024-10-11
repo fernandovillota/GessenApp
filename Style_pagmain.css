@@ -1,0 +1,456 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'trebuchet', sans-serif;/*tipografia*/
+    text-align: center;/*centrar*/
+}
+h2{
+    font-family: 'trebuchet', sans-serif;/*tipografia*/
+    text-align: center;/*centrar*/
+    color: black;
+    font-size: 35px;
+    color: rgb(1, 63, 1);
+    margin-block: 15px;
+}
+h3{
+    font-family: 'trebuchet', sans-serif;/*tipografia*/
+    margin-top: 10px;
+}
+p{
+    font-size: 18px;
+}
+img{
+    width: 500px;
+}
+a{
+    text-decoration: none;
+    color: rgb(1, 63, 1);
+}
+li{
+  margin-left: 40px;
+  margin-top: 2.5px;
+  font-size: 16px;
+}
+/* From Uiverse.io by Botones*/
+.bton {
+    --color: #2bad0b;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  .bton a{
+    color:#2bad0b;
+  }
+  .bton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .bton:hover a{
+    color: #fff;
+  }
+  .bton:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  .bton:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  .bton:active:before {
+    background: #2bad0b;
+    transition: background 0s;
+  }
+  /* Estilo del botón "X"*/
+  .bton-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .bton-close:hover {
+      background-color: #d32f2f;
+  }
+/*Titulo*/
+header {
+    background-color: #318819;
+    color: #ffffff;
+    padding: 10px;
+    height: 70px;
+    border-bottom: black solid 2px;
+    /*Ajustar la imagen al corner y h1 en el centro*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#logo_header {
+    height: 70px;
+    width: 70px;
+    /*posicion corner*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*Menu*/
+.menu_nav {
+    background-color: #60b548;
+    box-shadow: 0px 20px 15px rgba(167, 222, 131, 0.8);/*sombras*/
+    /*ajusatar los divs uno al lado del otro*/
+    display: flex;
+    justify-content: center;
+}
+
+.menu_nav div {
+    width: 13%;
+    background-color: #60b548;
+    text-align: center;
+    padding-block: 10px;
+    transition: background-color 0.4s;/* Transición suave */
+}
+
+.menu_nav div.active {
+    background-color: rgba(167, 222, 131, 0.8);
+}
+
+.menu_nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_nav a:hover {
+    color: #090909;
+}
+
+/*Contenido principal*/
+main {
+    padding: 20px;
+    margin: 10px;
+}
+.contenido_principal{
+    display: none;
+    text-align: justify;
+}
+.contenido_principal p{
+    margin-block: 20px;
+}
+    /*Quienes somos*/
+    /*Seccion de Texto*/
+    .texto_sec{
+      margin-top: 20px;
+      background-color: rgba(167, 222, 131, 0.8);
+      border-radius: 2.5%;
+      height: max-content;
+      padding: 1%;
+  }
+    .texto{
+        background-color: #60b548;
+        height: 100%;
+        min-width: fit-content;
+        margin: 10px;
+        border: black solid 1px;
+        border-radius: 10%;
+        padding: 10px;
+        text-align: justify;
+    }
+    .texto h2{
+        color: white;
+        font-size: 25px;
+    }
+    .texto p{
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    /*Inicio*/
+    #Inicio{
+      text-align: center;
+    }
+    /*Imagenes deslisadas*/
+    .imagenes_deslisadas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_des {
+        display: flex;
+        width: 600px;
+        height: 250px;
+        background-color: #e9ffeb;
+        justify-content: center;
+    }
+
+    .img_des img {
+        width: 0px;
+        height: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
+
+    .img_des img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    /*Recetas*/
+    #Recetas{
+      text-align: center;
+    }
+      /*Menu enfermedades*/
+      .menu_enfermedades{
+        margin-inline: 12%;
+        margin-block: 20px;
+        background-color: #60b548;
+        display: flex;
+        justify-content: center;
+        border-radius: 10%;
+      }
+      .menu_enfermedades div {
+        width: 25%;
+        background-color: #60b548;
+        text-align: center;
+        padding-block: 10px;
+        transition: background-color 0.4s;/* Transición suave */
+        border-radius: 10%;
+      }
+      .menu_enfermedades div.active {
+        background-color: rgba(167, 222, 131, 0.8);
+      }
+      .menu_enfermedades a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .menu_enfermedades a:hover {
+        color: #090909;
+      }
+      /*Modal inicio de secion/registro*/
+      .modal {
+        display: none; /* Inicialmente oculto */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 300px;
+        text-align: center;
+        position: relative;
+      }
+      .modal h2 {
+          margin-top: 0;
+      }
+      /* Fondo oscuro cuando aparece el modal */
+      .overlay {
+          display: none; /* Inicialmente oculto */
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+      }
+      /* Aplicar el desenfoque solo al contenido de la página */
+      .contenido_recetas{
+        transition: filter 0.8s ease; /* Transición suave para el efecto de pixelado */
+      }
+      .contenido_recetas.pixelated {
+        filter: blur(5px); /* Efecto de pixelado simulado usando blur */
+      }
+      /*Contenido recetas a partir del menu enfermedad*/
+      .contenido_enfermedad{
+        display: none;
+        text-align: justify;
+      }
+        /*Platillos*/
+        .submenu {
+          list-style: none;
+          padding: 0;
+          display: flex; /* Utilizamos flexbox para organizar los elementos */
+          flex-wrap: wrap; /* Permitimos que los elementos se envuelvan en múltiples líneas */
+          justify-content: center; /* Centramos horizontalmente los elementos */
+        }
+        .submenu li {
+          margin: 0 10px 20px; /* Añadimos márgenes a los elementos */
+          flex: 1 0 200px; /* Permitimos que los elementos crezcan y mantengan un ancho máximo */
+        }
+        .menu-item2 {
+          background-color: #4CAF50; /* Color de fondo verde */
+          color: white; /* Color de texto blanco para contrastar */
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          text-align: center; /* Alineación central del contenido */
+        }
+        .menu-item2 h3 {
+            margin-bottom: 5px;
+        }
+        .menu-item2 p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .menu-item2 .price {
+            font-weight: bold;
+        }      
+        .menu-item2:hover {
+          background-color: #60bb64; /* Cambiamos el color de fondo al pasar el mouse */
+          transition: background-color 0.3s ease;
+      }
+    /*Articulos*/
+    #Articulos p{
+        margin-block: 2px;
+    }
+
+    /*Contactos*/
+    #Contacto a:hover{
+      color: black;
+      text-decoration: underline;
+    }
+
+/*Pie de pagina*/
+footer{
+    box-shadow: 0px -20px 15px rgba(167, 222, 131, 0.8);/*sombras*/
+    margin-top: 30px;
+}
+.pie_redes{
+    background-color: #318819;
+    padding: 15px;
+}
+    /*Logos_redes*/
+    /* From Uiverse.io by misaraadel */ 
+    .socail-media {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+      }
+      
+      .socail-media li a {
+        width: 50px;
+        height: 50px;
+        background-color: #5b9d15;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+        border: 1px solid #5b9d15;
+      }
+      
+      .socail-media li a svg {
+        width: 24px;
+        height: 24px;
+        -o-object-fit: contain;
+        object-fit: contain;
+        filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(57deg) brightness(108%) contrast(105%);
+      }
+      
+      .socail-media li a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+        background-color: #fff;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      
+      .socail-media li a:hover::after {
+        animation: sideClip 0.5s linear;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        opacity: 1;
+      }
+      
+      .socail-media li a:hover svg {
+        animation: fadeInLeft 0.3s linear both;
+        filter: invert(52%) sepia(85%) saturate(2286%) hue-rotate(54deg) brightness(92%) contrast(84%);
+      }
+      
+      @keyframes sideClip {
+        0% {
+          clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+        }
+    
+        50% {
+          clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+        }
+    
+        100% {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+      
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+        }
+    
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    /*Derechos de autor*/  
+    .derechos_autor {
+        background-color: #2c7917;
+        padding: 20px;
+        text-align: center;
+    }
+    .derechos_autor p {
+        text-decoration: none;
+        color: #ecffe6;
+        margin: 7px;
+    }
+    .derechos_autor a {
+        color: #ecffe6;
+        text-decoration: none;
+    }
+    .derechos_autor a:hover {
+        text-decoration: underline;
+    }

@@ -25,7 +25,7 @@
 body{
     align-items: center;
     background-color: var(--white);
-    background: url("GesenAppFontModifi.png");
+    background: url("Imagenes/GesenAppFontModifi.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ link{
 
 .overlay{
     background-color: var(--lightblue);
-    background: url("GesenAppFont.png");
+    background: url("Imagenes/GesenAppFont.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
