@@ -1,20 +1,25 @@
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
 <html lang="es"> <!-- Inicio del documento HTML con lenguaje en español -->
-<head >
-    <meta charset="UTF-8">  <!-- interpreta los caracteres especiales -->
+<head>
+    <meta charset="UTF-8"> <!-- Interpreta los caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="Iniciar_Style.css"> <!-- Enlace al archivo CSS externo -->
-    <script defer src="Iniciar_main.js"></script>
-    <script defer src="Title.js"></script>
-    <title>Registro</title>
-</HEAd>
+    <script defer src="Iniciar_main.js"></script> <!-- Script JavaScript principal -->
+    <script defer src="Title.js"></script> <!-- Script adicional -->
+    <title>GessenApp - Registro e Inicio de Sesión</title>
+</head>
 <body>
-    <h1 id="titulo"><strong><em>GessenApp</em></strong>
-    </h1>
-    <div class="container right-panel-active">
+    <h1 id="titulo"><strong><em>GessenApp</em></strong></h1>
 
-        <!-- Sign Up-->
+    <div class="container">
+        <!-- Formulario de Registro -->
         <div class="container_form container--signup">
+            <form action="Base de datos/registrar.php" method="post" class="form">
+                <h2 class="form_title">Regístrate</h2>
+                <input type="text" name="usuario" placeholder="Usuario*" class="input" required>
+                <input type="email" name="email" placeholder="Email*" class="input" required>
+                <input type="password" name="password" placeholder="Contraseña*" class="input" required>
+                <input type="password" name="confirm_password" placeholder="Confirmar Contraseña*" class="input" required>
             <form action="Formulario.html" class="form">
                 <h2 class="form_title">Regístrate</h2>
                 <input type="text" placeholder="Usuario*" class="input" required/>
@@ -25,22 +30,22 @@
             </form>
         </div>
 
-        <!-- Sign In-->
+        <!-- Formulario de Inicio de Sesión -->
         <div class="container_form container--signin">
-            <form action="Pag_main2.html" class="form">
+            <form action="Base de datos/iniciar_sesion.php" method="post" class="form">
                 <h2 class="form_title">Iniciar Sesión</h2>
-                <input type="email" placeholder="Email*" class="input" required/>
-                <input type="password" placeholder="Contraseña*" class="input"required />
-                <a href="#" class="link">¿Olvido su contraseña?</a>
+                <input type="email" name="email" placeholder="Email*" class="input" required>
+                <input type="password" name="password" placeholder="Contraseña*" class="input" required>
+                <a href="#" class="link">¿Olvidó su contraseña?</a>
                 <input class="btn" type="submit" value="Iniciar Sesión">
             </form>
         </div>
 
-        <!-- Overlay -->
+        <!-- Overlay para Cambiar entre Registro e Inicio -->
         <div class="container_overlay">
             <div class="overlay">
                 <div class="overlay_panel overlay--left">
-                    <button class="btn" id="signin" >Iniciar Sesión</button>
+                    <button class="btn" id="signin">Iniciar Sesión</button>
                 </div>
                 <div class="overlay_panel overlay--right">
                     <button class="btn" id="signup">Registrarse</button>
@@ -48,6 +53,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Botón para regresar al inicio -->
     <div class="botonR">
         <section>
             <a href="Pag_main.html">Regresar al inicio</a>
