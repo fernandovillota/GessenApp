@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="recuperar_contrasena.css">
+</head>
+<body>
+  <div class="contenedor">
+    <form action="Base de datos/enviar_restablecer.php" method="post" class="formulario">
+      <h2>Restablecer contraseña</h2>
+      <p>Ingresa el correo electrónico con el que te registraste.</p>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" required placeholder="correo@ejemplo.com">
+
+      <input type="submit" value="Enviar enlace de recuperación">
+
+      <a class="volver" href="../Iniciar_Regristro.html">Volver al inicio</a>
+    </form>
+  </div>
+</body>
+</html>

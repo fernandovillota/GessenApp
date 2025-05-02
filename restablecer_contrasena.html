@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restablecer Contraseña</title>
+  <link rel="stylesheet" href="recuperar_contrasena.css">
+</head>
+<body>
+  <div class="contenedor">
+    <form action="Base de datos/procesar_cambio.php" method="post" class="formulario">
+      <h2>Crear nueva contraseña</h2>
+      <p>Ingresa tu nueva contraseña para continuar.</p>
+
+      <input type="hidden" name="token" value="<?= htmlspecialchars($_GET['token'] ?? '') ?>">
+
+      <label for="password">Nueva contraseña:</label>
+      <input type="password" name="password" placeholder="Mínimo 6 caracteres" required>
+
+      <input type="submit" value="Cambiar contraseña">
+
+      <a class="volver" href="../Iniciar_Regristro.html">Volver al inicio</a>
+    </form>
+  </div>
+</body>
+</html>

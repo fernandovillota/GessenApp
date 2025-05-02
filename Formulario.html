@@ -13,16 +13,6 @@
     <form action="Base de datos/procesar_formulario.php" method="post" class="formulario">
       <h1>Información adicional</h1>
 
-      <div class="datos-cuenta">
-        <h4>Detalles de la cuenta</h4>
-
-        <label for="email">Correo electrónico*</label>
-        <input type="email" placeholder="Example@gmail.com" id="email" name="email" required>
-
-        <label for="email-confirm">Confirmar Correo electrónico*</label>
-        <input type="email" placeholder="Example@gmail.com" id="email-confirm" name="email-confirm" required>
-      </div>
-
       <div class="datos-personales">
         <h4>Detalles Personales</h4>
 
@@ -40,29 +30,17 @@
 
         <label for="telefono">Teléfono*</label>
         <input type="tel" id="telefono" name="telefono" placeholder="1234567890" pattern="[0-9]{10}" required>
-
-        <label for="Pais">País</label>
-        <input type="text" placeholder="Colombia" value="Colombia" readonly>
-
-        <label for="lugar-nacimiento">Ciudad*</label>
-        <input type="text" id="lugar-nacimiento" name="lugar-nacimiento" required>
       </div>
 
       <div class="datos-salud">
         <h4>Detalles de salud</h4>
 
-        <label for="enfermedad">Enfermedad</label>
-        <input type="text" placeholder="Describir su enfermedad alimentaria" id="enfermedad" name="enfermedad">
-
-        <label for="dieta">Tipo de dieta</label>
+        <label for="dieta">Tipo de enfermedad</label>
         <select id="dieta" name="dieta">
-          <option value="Vegetariana">Vegetariana</option>
-          <option value="Vegana">Vegana</option>
-          <option value="DASH">DASH</option>
-          <option value="Gluten">Libre de gluten</option>
-          <option value="Alta en proteínas">Alta en proteínas</option>
-          <option value="Cetogénica">Cetogénica</option>
-          <option value="Paleo">Paleo</option>
+          <option value="Diabetes">Diabetes</option>
+          <option value="Hipertensión">Hipertensión</option>
+          <option value="Obesidad">Obesidad</option>
+          <option value="Ninguna">Ninguna</option>
         </select> 
       </div>
 

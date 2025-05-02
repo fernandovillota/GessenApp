@@ -240,3 +240,15 @@ link{
     margin-left: 10px;
     margin-right: 10px;
 }
+#mensajeError {
+    color: red; 
+    display: none;
+    margin: 0px;
+    font-size: 10px;
+}
+#passwordError {
+    color: red; 
+    display: none;
+    margin: 0px;
+    font-size: 10px;
+}

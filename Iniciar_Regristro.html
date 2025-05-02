@@ -9,26 +9,23 @@
     <title>GessenApp - Registro e Inicio de Sesión</title>
 </head>
 <body>
+
     <h1 id="titulo"><strong><em>GessenApp</em></strong></h1>
 
     <div class="container">
         <!-- Formulario de Registro -->
         <div class="container_form container--signup">
-            <form action="Base de datos/registrar.php" method="post" class="form">
+            <form action="Base de datos/registrar.php" id="registroForm" method="post" class="form">
                 <h2 class="form_title">Regístrate</h2>
-                <input type="text" name="usuario" placeholder="Usuario*" class="input" required>
                 <input type="email" name="email" placeholder="Email*" class="input" required>
-                <input type="password" name="password" placeholder="Contraseña*" class="input" required>
-                <input type="password" name="confirm_password" placeholder="Confirmar Contraseña*" class="input" required>
-            <form action="Formulario.html" class="form">
-                <h2 class="form_title">Regístrate</h2>
-                <input type="text" placeholder="Usuario*" class="input" required/>
-                <input type="email" placeholder="Email*" class="input" required/>
-                <input type="password" placeholder="Contraseña*" class="input" required/>
-                <input type="password" placeholder="Confirmar Contraseña*" class="input" required/>
-                <input class="btn" type="submit" value="Registrarse">
+                <input type="password" id="password" name="password" placeholder="Contraseña*" class="input" required>
+                <p id="passwordError">La contraseña debe tener al menos 6 caracteres, una mayúscula y un número</p>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña*" class="input" required>
+                <p id="mensajeError">Las contraseñas no coinciden</p>
+                <input class="btn" type="submit" value="Registrarse"> <!--formaction="Formulario.html" -->
             </form>
         </div>
+
 
         <!-- Formulario de Inicio de Sesión -->
         <div class="container_form container--signin">
@@ -36,7 +33,7 @@
                 <h2 class="form_title">Iniciar Sesión</h2>
                 <input type="email" name="email" placeholder="Email*" class="input" required>
                 <input type="password" name="password" placeholder="Contraseña*" class="input" required>
-                <a href="#" class="link">¿Olvidó su contraseña?</a>
+                <a href="Recuperar_contraseña.html" class="link">¿Olvidó su contraseña?</a>
                 <input class="btn" type="submit" value="Iniciar Sesión">
             </form>
         </div>

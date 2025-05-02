@@ -1,40 +1,59 @@
 <?php
-// Datos de la conexión
-$servidor = "localhost";
-$usuario = "root"; // Cambia si tienes configurado otro usuario
-$password = ""; // Cambia si tienes contraseña
-$basedatos = "Base de datos GessenApp";
+session_start();
 
-// Crear conexión
-$conn = new mysqli($servidor, $usuario, $password, $basedatos);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+// Verificamos que el usuario esté registrado y tenga ID en la sesión
+if (!isset($_SESSION['usuario_id'])) {
+    die("⚠️ No tienes acceso a esta página directamente. Inicia sesión o regístrate primero.");
 }
 
-// Obtener datos del formulario
-$email = $_POST['email'];
+$usuario_id = $_SESSION['usuario_id'];
+
+// Conexión a la base de datos
+$conexion = new mysqli("localhost", "root", "", "gessenapp");
+
+if ($conexion->connect_error) {
+    die("Error de conexión: " . $conexion->connect_error);
+}
+
+// ✅ Verificar si ya existe un registro en clientes para este usuario
+$check = $conexion->prepare("SELECT id FROM clientes WHERE usuario_id = ?");
+$check->bind_param("i", $usuario_id);
+$check->execute();
+$check->store_result();
+
+if ($check->num_rows > 0) {
+    // Ya existe un registro
+    echo "<script>alert('⚠️ Ya tienes un registro de datos guardado.'); window.location.href = '../pag_main2.html';</script>";
+    exit();
+}
+$check->close();
+
+// Recibir datos del formulario
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $genero = $_POST['Género'];
 $telefono = $_POST['telefono'];
-$ciudad = $_POST['lugar-nacimiento'];
-$enfermedad = $_POST['enfermedad'];
 $dieta = $_POST['dieta'];
 
-// Insertar datos en la base de datos
-$sql = "INSERT INTO formulario (email, nombre, apellido, genero, telefono, ciudad, enfermedad, dieta)
-        VALUES ('$email', '$nombre', '$apellido', '$genero', '$telefono', '$ciudad', '$enfermedad', '$dieta')";
+// Buscar el ID de la enfermedad (enfermedad_id)
+$stmt = $conexion->prepare("SELECT id FROM enfermedades WHERE nombre = ?");
+$stmt->bind_param("s", $dieta);
+$stmt->execute();
+$stmt->bind_result($enfermedad_id);
+$stmt->fetch();
+$stmt->close();
 
-if ($conn->query($sql) === TRUE) {
-    // Redirigir a la página siguiente si la inserción es exitosa
-    header("Location: ../Pag_main2.html");
-    exit();
+// Insertar datos en la tabla clientes
+$stmt = $conexion->prepare("INSERT INTO clientes (usuario_id, nombre, apellido, genero, telefono, enfermedad_id) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("issssi", $usuario_id, $nombre, $apellido, $genero, $telefono, $enfermedad_id);
+
+if ($stmt->execute()) {
+    // Registro exitoso, redirigir al usuario o mostrar mensaje
+    echo "<script>alert('✅ Datos guardados exitosamente.'); window.location.href = '../pag_main2.html';</script>";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "❌ Error al guardar datos: " . $stmt->error;
 }
 
-// Cerrar conexión
-$conn->close();
+$stmt->close();
+$conexion->close();
 ?>
