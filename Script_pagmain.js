@@ -57,3 +57,15 @@ function closeModal() {
     overlay.style.display = 'none';
     content.classList.remove('pixelated'); // Remueve la clase que pixelea el fondo
 }
+// configuracion de perfil
+function irASeccionPerfil(seccionId) {
+    mostrarContenido('Inicio'); // Muestra el apartado de perfil
+    changeActiveDiv('div2');    // Activa visualmente el botón "Perfil"
+
+    setTimeout(function() {
+        var seccion = document.getElementById(seccionId);
+        if (seccion) {
+            seccion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 100); 
+}

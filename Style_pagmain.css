@@ -454,3 +454,82 @@ footer{
     .derechos_autor a:hover {
         text-decoration: underline;
     }
+    /* Estilos del contenedor configuracion de perfil */
+    .config-wrapper {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      z-index: 100;
+    }
+    
+    .config-container {
+      position: relative;
+    }
+    
+    .profile-header {
+      background-color: #3e8e41;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    
+    .profile-header:hover {
+      background-color: #367a38;
+    }
+    
+    .profile-pic {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    
+    .username {
+      font-size: 14px;
+      font-weight: 500;
+      display: none; /* Ocultamos el texto para hacerlo más limpio */
+    }
+    
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      margin-top: 5px;
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      min-width: 180px;
+    }
+    
+    .dropdown-menu a {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    
+    .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .icon {
+      margin-right: 10px;
+    }
+    
+/* Contenedor flotante para el menú en la esquina superior derecha */
+.config-wrapper {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 100;
+}

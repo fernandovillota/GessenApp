@@ -8,14 +8,47 @@
     <link rel="stylesheet" type="text/css" href="Style_pagmain.css">
     <script defer src="Script_pagmain.js"></script>
     <script defer src="Title.js"></script>
+    <script defer src="configuracion-cuenta.js"></script>
 </head>
 
 <body>
     <!--Titulo-->
     <header>
         <img id="logo_header" src="Imagenes/LogGessenAppmodifi.jpg">
-        <h1>GessenApp</h1>
+        <h1>GessenApp</h1> 
     </header>
+
+<!-- Configuración de cuentas -->
+<!-- Contenedor principal del perfil -->
+<div class="config-wrapper">
+    <div class="config-container">
+      <div class="profile-header" onclick="toggleMenu()">
+        <img src="Imagenes/usuario predeterminado.png" alt="Perfil" class="profile-pic">
+        <div class="welcome-message">
+          <span class="greeting">Hola, <strong>NombreUsuario</strong>!</span>
+          <span class="subtext">Bienvenido</span>
+        </div>
+      </div>
+      <div class="dropdown-menu" id="configMenu">
+        <a href="#" onclick="irASeccionPerfil('seguridad')"><i class="icon">🔒</i> Contraseña y seguridad</a>
+        <a href="#" onclick="irASeccionPerfil('datos')"><i class="icon">🧾</i> Datos personales</a>
+        <a href="#" onclick="irASeccionPerfil('permisos')"><i class="icon">⚙️</i> Tu información y permisos</a>
+        <a href="Pag_main.html"><i class="icon">🚪</i> Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+  
+  
+        <!--Contacto-->
+        <div class="contenido_principal" id="Contacto">
+            <h2>Contáctanos</h2>
+            <p>Queremos que te pongas en contacto con nosotros para compartir tus comentarios, opiniones y
+                necesidades o para recibir una asesoría completa sobre un producto o servicio de tu interés.
+                Según la información que necesites, puedes hacerlo mediante las siguientes opciones:</p>
+            <p>Email: <a href="mailto:gessenapp@gmail.com?subject=Consulta&body=Hola, tengo una consulta."> gessenapp@gmail.com</a></p>
+            <p>Teléfono: <a href="https://wa.me/573136910728?text=Hola,%20tengo%20una%20consulta" target="_blank">+57 3136910728</a></p>
+        </div>
+    </main>
     <!--Menu Navegacion-->
     <nav class="menu_nav">
         <div id="div1"><a href="#" onclick="changeActiveDiv('div1'),mostrarContenido('Quienes_somos')">¿Quiénes Somos?</a></div>
@@ -63,25 +96,44 @@
                 </div>
             </div>
         </div>
-        <!--Inicio-->
-        <div class="contenido_principal" id="Inicio"><!--primer vista del contenido-->
-          <h2>Bienvenido a GessenApp</h2>
-          <p>Descubre una nueva forma de alimentarte con nuestros deliciosos platos saludables.</p>
-          <!--Imagenes deslisadas-->
-          <div class="imagenes_deslisadas">
-            <section class="img_des">
-                <img src="Imagenes/plato1.jpg">
-                <img src="Imagenes/plato2.jpg">
-                <img src="Imagenes/plato3.jpg">
-                <img src="Imagenes/GesenAppFont.png">
-                <img src="Imagenes/plato4.jpg">
-                <img src="Imagenes/plato6.jpg">
-                <img src="Imagenes/plato5.jpg">
-            </section>
-          </div>
-          <p>Gracias por ser parte de nuestra comunidad.</p>
-          <button class="bton"><a href="Pag_main.html">Cerrar seción</a></button>
-        </div>
+<!--Inicio-->
+<div class="contenido_principal" id="Inicio" style="display: none;"><!--primer vista del contenido-->
+    <h2>Bienvenido a GessenApp</h2>
+    <p>Descubre una nueva forma de alimentarte con nuestros deliciosos platos saludables.</p>
+  
+    <!-- Imagenes deslizables -->
+    <div class="imagenes_deslisadas">
+      <section class="img_des">
+        <img src="Imagenes/plato1.jpg">
+        <img src="Imagenes/plato2.jpg">
+        <img src="Imagenes/plato3.jpg">
+        <img src="Imagenes/GesenAppFont.png">
+        <img src="Imagenes/plato4.jpg">
+        <img src="Imagenes/plato6.jpg">
+        <img src="Imagenes/plato5.jpg">
+      </section>
+    </div>
+  
+    <p>Gracias por ser parte de nuestra comunidad.</p>
+    <button class="bton"><a href="Pag_main.html">Cerrar sesión</a></button>
+  
+    <!-- Secciones del perfil -->
+    <section id="seguridad" style="margin-top: 50px;">
+      <h3>🔒 Contraseña y seguridad</h3>
+      <p>Aquí puedes actualizar tu contraseña y configurar opciones de seguridad para proteger tu cuenta.</p>
+    </section>
+  
+    <section id="datos" style="margin-top: 50px;">
+      <h3>🧾 Datos personales</h3>
+      <p>Edita tu nombre, correo electrónico y otros datos personales asociados a tu cuenta.</p>
+    </section>
+  
+    <section id="permisos" style="margin-top: 50px;">
+      <h3>⚙️ Tu información y permisos</h3>
+      <p>Consulta y administra los permisos que has otorgado a la aplicación.</p>
+    </section>
+  </div>
+  
 
         <!--Recetas-->
         <div class="contenido_principal" id="Recetas" style="display: block;">
@@ -590,16 +642,6 @@
           </ul>
         </div>
 
-        <!--Contacto-->
-        <div class="contenido_principal" id="Contacto">
-          <h2>Contáctanos</h2>
-          <p>Queremos que te pongas en contacto con nosotros para compartir tus comentarios, opiniones y
-              necesidades o para recibir una asesoría completa sobre un producto o servicio de tu interés.
-              Según la información que necesites, puedes hacerlo mediante las siguientes opciones:</p>
-          <p>Email: <a href="mailto:info@comidasaludable.com?subject=Consulta&body=Hola, tengo una consulta."> info@comidasaludable.com</a></p>
-          <p>Teléfono: <a href="https://wa.me/573136910728?text=Hola,%20tengo%20una%20consulta" target="_blank">+57 1234567890</a></p>
-        </div>
-    </main>
     <!--Pie de pagina-->
     <footer>
         <div class="pie_redes">
