@@ -9,6 +9,7 @@
     <script defer src="Script_pagmain.js"></script>
     <script defer src="Title.js"></script>
     <script defer src="configuracion-cuenta.js"></script>
+    <script defer src="perfil_config.js"></script>
 </head>
 
 <body>
@@ -30,9 +31,10 @@
         </div>
       </div>
       <div class="dropdown-menu" id="configMenu">
-        <a href="#" onclick="irASeccionPerfil('seguridad')"><i class="icon">🔒</i> Contraseña y seguridad</a>
-        <a href="#" onclick="irASeccionPerfil('datos')"><i class="icon">🧾</i> Datos personales</a>
-        <a href="#" onclick="irASeccionPerfil('permisos')"><i class="icon">⚙️</i> Tu información y permisos</a>
+        <a href="#" onclick="changeActiveDiv('div2'),mostrarContenido('Inicio')"><i class="icon">🙋🏼‍♂️</i> Tu perfil</a>
+        <a href="#" onclick="mostrarSeccion('datos')"><i class="icon">🧾</i> Datos personales</a>
+        <a href="#" onclick="mostrarSeccion('seguridad')"><i class="icon">🔒</i> Contraseña y seguridad</a>
+        <a href="#" onclick="mostrarSeccion('permisos')"><i class="icon">⚙️</i> Tu información y permisos</a>
         <a href="Pag_main.html"><i class="icon">🚪</i> Cerrar sesión</a>
       </div>
     </div>
@@ -96,43 +98,56 @@
                 </div>
             </div>
         </div>
+
 <!--Inicio-->
 <div class="contenido_principal" id="Inicio" style="display: none;"><!--primer vista del contenido-->
-    <h2>Bienvenido a GessenApp</h2>
-    <p>Descubre una nueva forma de alimentarte con nuestros deliciosos platos saludables.</p>
-  
-    <!-- Imagenes deslizables -->
-    <div class="imagenes_deslisadas">
-      <section class="img_des">
-        <img src="Imagenes/plato1.jpg">
-        <img src="Imagenes/plato2.jpg">
-        <img src="Imagenes/plato3.jpg">
-        <img src="Imagenes/GesenAppFont.png">
-        <img src="Imagenes/plato4.jpg">
-        <img src="Imagenes/plato6.jpg">
-        <img src="Imagenes/plato5.jpg">
-      </section>
-    </div>
-  
-    <p>Gracias por ser parte de nuestra comunidad.</p>
-    <button class="bton"><a href="Pag_main.html">Cerrar sesión</a></button>
-  
-    <!-- Secciones del perfil -->
-    <section id="seguridad" style="margin-top: 50px;">
-      <h3>🔒 Contraseña y seguridad</h3>
-      <p>Aquí puedes actualizar tu contraseña y configurar opciones de seguridad para proteger tu cuenta.</p>
-    </section>
-  
-    <section id="datos" style="margin-top: 50px;">
-      <h3>🧾 Datos personales</h3>
-      <p>Edita tu nombre, correo electrónico y otros datos personales asociados a tu cuenta.</p>
-    </section>
-  
-    <section id="permisos" style="margin-top: 50px;">
-      <h3>⚙️ Tu información y permisos</h3>
-      <p>Consulta y administra los permisos que has otorgado a la aplicación.</p>
+  <h2>Bienvenido a GessenApp</h2>
+  <p>Descubre una nueva forma de alimentarte con nuestros deliciosos platos saludables.</p>
+
+  <!-- Imagenes deslizables -->
+  <div class="imagenes_deslisadas">
+    <section class="img_des">
+      <img src="Imagenes/plato1.jpg">
+      <img src="Imagenes/plato2.jpg">
+      <img src="Imagenes/plato3.jpg">
+      <img src="Imagenes/GesenAppFont.png">
+      <img src="Imagenes/plato4.jpg">
+      <img src="Imagenes/plato6.jpg">
+      <img src="Imagenes/plato5.jpg">
     </section>
   </div>
+
+  <p>Gracias por ser parte de nuestra comunidad.</p>
+
+  <!-- Menú lateral estilo centro de cuentas -->
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px;">
+    <!-- Menú lateral -->
+    <div style="min-width: 250px; border-right: 1px solid #ccc; padding-right: 10px;">
+        <button class="menu-btn" onclick="mostrarSeccion('datos')">🧾 Datos personales</button><br>
+        <button class="menu-btn" onclick="mostrarSeccion('seguridad')">🔒 Contraseña y seguridad</button><br>
+        <button class="menu-btn" onclick="mostrarSeccion('permisos')">⚙️ Tu información y permisos</button><br>
+    </div>
+
+    <!-- Secciones de cuenta -->
+    <section id="seguridad" style="display: none;">
+        <h3>🔒 Contraseña y seguridad</h3>
+        <p>Actualiza tu contraseña y configura opciones de seguridad.</p>
+      </section>
+      
+      <section id="datos" style="display: none;">
+        <h3>🧾 Datos personales</h3>
+        <img src="Imagenes/usuario predeterminado.png" alt="Perfil" class="profile-pic">
+      </section>
+      
+      <section id="permisos" style="display: none;">
+        <h3>⚙️ Tu información y permisos</h3>
+        <p>Consulta y administra los permisos que has otorgado.</p>
+      </section>
+      
+  </div>
+  <button class="bton"><a href="Pag_main.html">Cerrar sesión</a></button>
+</div>
+
   
 
         <!--Recetas-->
