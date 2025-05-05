@@ -10,6 +10,7 @@
     <script defer src="Title.js"></script>
     <script defer src="configuracion-cuenta.js"></script>
     <script defer src="perfil_config.js"></script>
+    
 </head>
 
 <body>
@@ -26,15 +27,15 @@
       <div class="profile-header" onclick="toggleMenu()">
         <img src="Imagenes/usuario predeterminado.png" alt="Perfil" class="profile-pic">
         <div class="welcome-message">
-          <span class="greeting">Hola, <strong>NombreUsuario</strong>!</span>
-          <span class="subtext">Bienvenido</span>
+            <strong id="nombre-usuario">NombreUsuario</strong>
+            <span class="subtext">Bienvenido</span>
         </div>
       </div>
       <div class="dropdown-menu" id="configMenu">
         <a href="#" onclick="changeActiveDiv('div2'),mostrarContenido('Inicio')"><i class="icon">🙋🏼‍♂️</i> Tu perfil</a>
-        <a href="#" onclick="mostrarSeccion('datos')"><i class="icon">🧾</i> Datos personales</a>
-        <a href="#" onclick="mostrarSeccion('seguridad')"><i class="icon">🔒</i> Contraseña y seguridad</a>
-        <a href="#" onclick="mostrarSeccion('permisos')"><i class="icon">⚙️</i> Tu información y permisos</a>
+        <a href="#" onclick="changeActiveDiv('div2'),mostrarContenido('Inicio'),mostrarSeccion('datos')"><i class="icon">🧾</i> Datos personales</a>
+        <a href="#" onclick="changeActiveDiv('div2'),mostrarContenido('Inicio'),mostrarSeccion('seguridad')"><i class="icon">🔒</i> Contraseña y seguridad</a>
+        <a href="#" onclick="changeActiveDiv('div2'),mostrarContenido('Inicio'),mostrarSeccion('permisos')"><i class="icon">⚙️</i> Tu información y permisos</a>
         <a href="Pag_main.html"><i class="icon">🚪</i> Cerrar sesión</a>
       </div>
     </div>
@@ -128,15 +129,33 @@
         <button class="menu-btn" onclick="mostrarSeccion('permisos')">⚙️ Tu información y permisos</button><br>
     </div>
 
-    <!-- Secciones de cuenta -->
+<!-- Secciones de cuenta -->
+<section id="datos" style="display: none;">
+    <h3>Tus Datos personales:</h3>
+    <p>Tu foto de perfil actual es:</p>
+    <img src="Imagenes/usuario predeterminado.png" alt="Perfil" class="profile-pic">
+    
+    <p>Tu nombre de usuario es:</p>
+    <p><strong id="nombre-usuario-datos">NombreUsuario</strong></p>
+
+    <p>Tu nombre de usuario es:</p>
+    <p><strong id="apellido-usuario-datos">ApellidoUsuario</strong></p>
+    
+    <p>Tu correo registrado es:</p>
+    <p><strong id="correo-usuario-datos">correo@ejemplo.com</strong></p>
+    
+    <p>Tu género es:</p>
+    <p><strong id="genero-usuario-datos">Género</strong></p>
+    
+    <p>Tu teléfono es:</p>
+    <p><strong id="telefono-usuario-datos">Teléfono</strong></p>
+    
+    <p>Tu tipo de enfermedad es:</p>
+    <p><strong id="enfermedad-usuario-datos">Enfermedad</strong></p>
+</section>
     <section id="seguridad" style="display: none;">
         <h3>🔒 Contraseña y seguridad</h3>
         <p>Actualiza tu contraseña y configura opciones de seguridad.</p>
-      </section>
-      
-      <section id="datos" style="display: none;">
-        <h3>🧾 Datos personales</h3>
-        <img src="Imagenes/usuario predeterminado.png" alt="Perfil" class="profile-pic">
       </section>
       
       <section id="permisos" style="display: none;">

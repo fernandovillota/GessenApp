@@ -1,3 +1,4 @@
+  // abre el menú desplegable 
 function mostrarSeccion(id) {
   const secciones = ['seguridad', 'datos', 'permisos'];
 
@@ -21,3 +22,30 @@ function toggleMenu() {
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
 }
+
+  // validacion para que muestre el nombre del usuario
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("obtener_datos.php")
+    .then(response => response.json())
+    .then(data => {
+      // Nombre en el menú superior
+      const nombreMenu = document.getElementById("nombre-usuario");
+
+      // Nombre en la sección "datos personales"
+      const nombreDatos = document.getElementById("nombre-usuario-datos");
+
+      if (data.nombre) {
+        if (nombreMenu) {
+          nombreMenu.textContent = data.nombre;
+        }
+
+        if (nombreDatos) {
+          nombreDatos.textContent = data.nombre;
+        }
+      }
+    })
+    .catch(error => {
+      console.error("Error al obtener el nombre del usuario:", error);
+    });
+});
+
